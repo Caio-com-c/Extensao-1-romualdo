@@ -10,6 +10,7 @@ pino do servo
 limites de ângulo
 velocidade de movimento
 métodos como moveTo(angle) ou moveSmooth(angle, speed)
+
 Classe 2 - Criação do conjunto completo
 Classe Arm6DOF
 Gerencia o conjunto de juntas:
