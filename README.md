@@ -51,7 +51,7 @@ Este projeto implementa uma biblioteca e um programa de controle completo para u
 ## 📁 Estrutura do Projeto
 
 ```
-Extensao-1-romualdo/
+Arduino/
 ├── braco_easing.h      # Definição da classe RobotArm e estrutura RobotPose
 ├── braco_easing.cpp    # Implementação dos métodos da classe RobotArm
 ├── braco_easing.ino    # Programa principal com máquina de estados e ciclo automático
