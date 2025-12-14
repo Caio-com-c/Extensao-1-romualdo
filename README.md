@@ -2,9 +2,14 @@
 
 Sistema de controle para braço robótico de 6 graus de liberdade (6-DOF) utilizando servomotores com movimento suave (easing) baseado na biblioteca `ServoEasing` para Arduino.
 
+## Simulação 
+![Simulação em funcionamento](assets/to_readme/content.gif)
+
+
 ## 📋 Descrição
 
 Este projeto implementa uma biblioteca e um programa de controle completo para um braço robótico, permitindo movimentos sincronizados e suaves de todos os servos. O sistema inclui controle manual via botões, máquina de estados para gerenciamento de operações e ciclo automático de trabalho.
+
 
 ## 🎯 Características
 
@@ -16,20 +21,18 @@ Este projeto implementa uma biblioteca e um programa de controle completo para u
 - **Controle Manual**: Botões para Start, Stop e Emergência
 - **Ciclo Automático**: Execução automática de sequências de movimentos
 
-## 🔧 Hardware Necessário
+## 🔧 Hardware Utilizado
 
-- Arduino (Uno, Nano ou compatível)
-- 6 Servomotores (ex: SG90, MG996R)
+- Arduino Mega
+- 6 Servomotores HITEC HS-422 Deluxe
 - 3 Botões (para Start, Stop e Emergência)
-- Fonte de alimentação adequada para os servos (recomendado: 5V externa)
-- Protoboard e jumpers
+- Fonte de alimentação adequada para os servos (5V externa)
 
 ## 📦 Dependências
 
 ### Bibliotecas Arduino
 
 - **ServoEasing**: Biblioteca para controle suave de servos
-  - Instalação: Gerenciador de Bibliotecas do Arduino IDE → Buscar "ServoEasing" → Instalar
 
 ## 🔌 Conexões
 
@@ -68,23 +71,6 @@ Arduino/
 4. Conecte os servos e botões conforme a seção de Conexões
 5. Faça upload do código para o Arduino
 
-### 2. Configuração Inicial
-
-No arquivo `braco_easing.ino`, ajuste as posições conforme seu hardware:
-
-```cpp
-// Posição de descanso (evita "pulo" ao ligar)
-robot.setParkPose(90, 90, 90, 90, 90, 0);
-
-// Posição Home (calibração)
-robot.setZeroMaquina(90, 90, 90, 90, 90, 0);
-
-// Posição Zero Peça (onde o trabalho começa)
-robot.setZeroPeca(100, 45, 30, 110, 120, 0);
-
-// Velocidade global (graus por segundo)
-robot.setSpeed(40);
-```
 
 ### 3. Operação
 
@@ -242,11 +228,11 @@ case 6:
 Este projeto é fornecido como está, para uso educacional e pessoal.
 
 ## 👤 Autor
-
-Projeto desenvolvido para controle de braço robótico com extensão de easing.
+Lucas8022, Caio_com_c, Kaique, Carolina, João Vitor, Guilherme.
+Projeto desenvolvido como parte da avaliação da disciplina de Práticas Curriculares de Extensão I do curso de Engenharia de Controle e Automação.
 
 ---
 
-**Versão**: 1.0  
-**Última atualização**: 2024
+**Versão**: a0.1.1  
+**Última atualização**: 2025
 
